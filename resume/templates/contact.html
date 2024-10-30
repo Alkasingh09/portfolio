@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content1 %} 
+<div class="row my-2">
+    <div class="col-4 text-center my-5 text-light">
+        <h1 class="mt-5"> Stay connected</h1>
+        <h3 class="mt-5"> alkakrisingh99@gmail.com</h3>
+
+        
+            <div class="col-12 d-flex justify-content-center align-items-center mt-5">
+                <a href="https://www.linkedin.com/in/alka-kumari-163851248/" target="_blank" class="ms-3">
+                    <img src="{% static 'images/linkedin.webp' %}" alt="images/linkedin.webp" width="50" height="50"  class="sociallink">
+                </a>
+    
+                <a href="https://www.github.com/Alkasingh09" target="_blank" class="ms-3">
+                    <img src="{% static 'images/GitHub.png' %}" alt="images/GitHub.png" width="50" height="50"  class="sociallink">
+                </a>
+    
+                <a href="https://leetcode.com/u/alkasingh09/" target="_blank" class="ms-3">
+                    <img src="{% static 'images/leetcode.jpg' %}" alt="images/leetcode.jpg" width="50" height="50"  class="sociallink">
+                </a>
+                
+                <a href="https://www.instagram.com/alka.prashar/" target="_blank" class="ms-3">
+                    <img src="{% static 'images/instagram.png' %}" alt="images/instagram.png" width="50" height="50" class="sociallink">
+                </a>
+            </div>
+        
+    </div>
+
+    <div class="col-5 offset-1 mt-3">
+        <div class="container form-container">
+            <form>
+                <div class="form-group m-3">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name">
+                    
+                </div>
+
+                <div class="form-group m-3">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email">
+                    
+                </div>
+
+                <div class="form-group m-3">
+                    <label for="phone">Phone no</label>
+                    <input type="tel" class="form-control" id="phone">
+                    
+                </div>
+                
+                <div class="form-group m-3">
+                <label for="msg">Message</label>
+                    <textarea type="text" class="form-control" id="msg" rows="2"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock content1 %}

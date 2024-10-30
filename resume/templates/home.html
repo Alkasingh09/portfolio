@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content1 %} 
+<div class="row my-5">
+	<div class="col-12 d-flex justify-content-center align-items-center">
+		<div class="circular-image-container">
+			<img class="circular-image" src=" {% static 'images/im.jpg' %}" alt="images">
+		</div>
+	</div>
+
+
+	<div class="col-12 text-center mt-3">
+		<h4 class="title">Hi, I'm</h4>
+		<div class="name">
+			<h1>Alka Kumari</h1>
+			<h1> a Full Stack Developer</h1>
+		</div>
+	</div>
+
+	<div class="col-12 text-center mt-3">
+		<div class="col-12 d-flex justify-content-center align-items-center">
+			<a href="https://www.linkedin.com/in/alka-kumari-163851248/" target="_blank" class="ms-3">
+				<img src="{% static 'images/linkedin.webp' %}" alt="images/linkedin.webp" width="50" height="50"  class="sociallink">
+			</a>
+
+			<a href="https://www.github.com/Alkasingh09" target="_blank" class="ms-3">
+				<img src="{% static 'images/GitHub.png' %}" alt="images/GitHub.png" width="50" height="50"  class="sociallink">
+			</a>
+
+			<a href="https://leetcode.com/u/alkasingh09/" target="_blank" class="ms-3">
+				<img src="{% static 'images/leetcode.jpg' %}" alt="images/leetcode.jpg" width="50" height="50"  class="sociallink">
+			</a>
+			
+			<a href="https://www.instagram.com/alka.prashar/" target="_blank" class="ms-3">
+				<img src="{% static 'images/instagram.png' %}" alt="images/instagram.png" width="50" height="50" class="sociallink">
+			</a>
+	    </div>
+	</div>
+</div>
+
+{% endblock content1 %}
